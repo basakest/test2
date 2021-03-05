@@ -11,6 +11,7 @@ class DatabaseAdapterTest extends TestCase
 
     public function testEnforce()
     {
+        
         $this->assertTrue(Enforcer::enforce('alice', 'data1', 'read'));
 
         $this->assertFalse(Enforcer::enforce('bob', 'data1', 'read'));
